@@ -29,6 +29,7 @@ This repo is a job application workspace. Claude acts as a career advisor and ap
 ### Professional Experience
 <!-- List your roles, most recent first -->
 - **Human Resources Intern** (Mar 2026 - Present) - **Hansoll Vina** (Vietnam)
+  - Designed and built an internal BHXH (social insurance) tracking and reporting tool (Streamlit, FastAPI, SQLite) that replaced a manual Excel process, automating monthly data validation, historical carry-forward, and report generation
   - Compiled and structured workforce datasets using advanced Excel, cross-referencing to eliminate anomalies
   - Analyzed historical structural databases to generate workforce metric reports, ensuring data confidentiality
   - Managed personnel records with cross-referencing techniques to detect anomalies and ensure consistency
@@ -38,13 +39,14 @@ This repo is a job application workspace. Claude acts as a career advisor and ap
   - Shared data-driven progress reports with internal management to align stakeholder expectations
 
 **Independent Projects** (central to the technical portfolio given limited industry tenure):
+- RAG Chatbot - Internal Knowledge Base (Jun 2026-Present): On-prem, role-based-access-controlled RAG system (LangChain, Qdrant, LM Studio), semantic caching, streaming, audit logging, built iteratively with Claude Code
 - Real-time Recruitment CDC Pipeline (Mar-Apr 2026): Kafka/Spark streaming pipeline, Kappa Architecture, Airflow orchestration, 99.9% data consistency
 - Customer 360 Pipeline & AI Integration (Nov-Dec 2025): PySpark/HDFS ELT pipeline, 15k+ profile resolution, PostgreSQL + Power BI
 - Item Identification in Supermarket (Jan-Jul 2025): Computer vision (OpenCV, YOLO, DINOv2, PyTorch) for product identification
 
 ### Technical Skills
-- **Primary:** Python (NumPy, Pandas, PySpark), SQL (MySQL, PostgreSQL), ETL/ELT pipelines, Kafka, Spark, Airflow, Applied Computer Vision (OpenCV, PyTorch, YOLO, DINOv2)
-- **Secondary:** Data Warehouse/Data Lake Architecture (HDFS/Hadoop), Docker, NoSQL (Cassandra), LLM integration, Power BI
+- **Primary:** Python (NumPy, Pandas, PySpark), SQL (MySQL, PostgreSQL, SQLite), ETL/ELT pipelines, Kafka, Spark, Airflow, Applied Computer Vision (OpenCV, PyTorch, YOLO, DINOv2)
+- **Secondary:** Data Warehouse/Data Lake Architecture (HDFS/Hadoop), Docker, NoSQL (Cassandra), LLM/RAG integration (LangChain, Qdrant, RAGAS eval), FastAPI, Power BI
 - **Domain:** Data engineering (streaming, CDC, orchestration), applied machine learning/computer vision, data quality & governance (schema enforcement, consistency validation, privacy regulation awareness)
 - **Software:** Docker, Git, Linux, Advanced Excel, Power BI, Streamlit
 

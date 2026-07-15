@@ -32,6 +32,7 @@ Graduation thesis ("Khoa luan tot nghiep") graded A+ (9.3/10).
 
 ### Human Resources Intern - Hansoll Vina (Mar 2026 - Present)
 [LOCATION]
+- Designed and built an internal BHXH (social insurance) tracking and reporting tool (Streamlit, FastAPI, SQLite) that replaced a manual Excel process, automating monthly data validation, historical carry-forward, and report generation
 - Compiled, validated, and structured large-scale workforce datasets using advanced Excel, executing cross-referencing techniques to eliminate data anomalies
 - Analyzed historical structural databases to generate precise reports on key workforce metrics, ensuring strict data confidentiality
 - Managed personnel records and performed cross-referencing techniques to detect anomalies and ensure consistency
@@ -53,18 +54,19 @@ Graduation thesis ("Khoa luan tot nghiep") graded A+ (9.3/10).
 
 ### Programming & ML
 - **Python**: NumPy, Pandas, PySpark
-- **SQL**: MySQL, PostgreSQL
+- **SQL**: MySQL, PostgreSQL, SQLite
 - **NoSQL**: Cassandra
 - **Computer Vision**: OpenCV, PyTorch, YOLO, DINOv2, Label Studio
 
 ### Domain Expertise
 - Data Engineering & ETL/ELT pipelines (Kafka, Spark, Airflow, Kappa Architecture, Change Data Capture)
 - Data Warehouse & Data Lake Architecture (HDFS/Hadoop, PostgreSQL)
+- LLM/RAG systems: LangChain, Qdrant (vector DB), RBAC-enforced retrieval, semantic caching, RAGAS-based evaluation, local LLM serving (LM Studio)
 - Data quality & governance: automated data cleaning, schema enforcement, data consistency validation, standardization, privacy & security regulation awareness (HIPAA, HL7, FHIR)
 
 ### Software & Tools
 - Docker, Git, Linux system fundamentals
-- Advanced Excel, Power BI, Streamlit
+- FastAPI, Redis, Advanced Excel, Power BI, Streamlit
 
 ## Publications
 <!-- List peer-reviewed publications, if any -->

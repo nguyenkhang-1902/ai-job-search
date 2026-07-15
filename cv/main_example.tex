@@ -56,15 +56,15 @@
 \vspace{1pt}
 \begin{itemize}
 
-\item \textbf{Programming \& Data}: Python (NumPy, Pandas, PySpark), SQL (MySQL, PostgreSQL), NoSQL (Cassandra)
+\item \textbf{Programming \& Data}: Python (NumPy, Pandas, PySpark), SQL (MySQL, PostgreSQL, SQLite), NoSQL (Cassandra)
 
 \item \textbf{Data Engineering}: ETL/ELT pipelines, Change Data Capture, Kafka, Spark, Airflow, Kappa Architecture, Data Warehouse/Data Lake Architecture (HDFS/Hadoop)
 
-\item \textbf{Applied Machine Learning}: OpenCV, PyTorch, YOLO, DINOv2, Label Studio, LLM integration
+\item \textbf{Applied Machine Learning}: OpenCV, PyTorch, YOLO, DINOv2, Label Studio, LangChain, Qdrant, RAG systems (RBAC retrieval, RAGAS eval, local LLM serving via LM Studio)
 
 \item \textbf{Data Quality \& Governance}: Automated data cleaning, schema enforcement, data consistency validation, privacy/security regulation awareness (HIPAA, HL7, FHIR)
 
-\item \textbf{Tools \& Analytics}: Docker, Git, Linux, Advanced Excel, Power BI, Streamlit
+\item \textbf{Tools \& Analytics}: Docker, Git, Linux, FastAPI, Redis, Advanced Excel, Power BI, Streamlit
 
 \end{itemize}
 
@@ -75,6 +75,15 @@
 \section{Projects}
 \vspace{1pt}
 \begin{itemize}
+
+\item{\cventry{Jun 2026--Present}{RAG Chatbot - Internal Knowledge Base}{Independent Project}{}{}{\vspace{1pt}
+\begin{itemize}
+    \item Built a role-based-access-controlled, fully on-premises RAG chatbot (LangChain, Qdrant, LM Studio) enforcing per-department access via server-side, JWT-verified filtering
+    \item Implemented citation-hallucination guardrails, Redis-backed semantic caching, and FastAPI/SSE streaming responses for production-grade reliability
+    \item Validated with 43/43 automated tests covering RBAC-bypass and prompt-injection scenarios; iteratively built with Claude Code following TDD
+\end{itemize}}}
+
+\vspace{3pt}
 
 \item{\cventry{Mar--Apr 2026}{Real-time Recruitment CDC Pipeline}{Independent Project}{}{}{\vspace{1pt}
 \begin{itemize}
@@ -112,6 +121,7 @@
 % --- Most Recent Role ---
 \item{\cventry{Mar 2026--Present}{Human Resources Intern}{Hansoll Vina}{Vietnam}{}{\vspace{1pt}
 \begin{itemize}
+    \item Designed and built an internal BHXH (social insurance) tracking and reporting tool (Streamlit, FastAPI, SQLite) that replaced a manual Excel process, automating monthly data validation, historical carry-forward, and report generation
     \item Compiled, validated, and structured large-scale workforce datasets using advanced Excel, executing cross-referencing techniques to eliminate data anomalies
     \item Analyzed historical structural databases to generate precise reports on key workforce metrics, ensuring strict data confidentiality
     \item Managed personnel records and performed cross-referencing techniques to detect anomalies and ensure consistency
