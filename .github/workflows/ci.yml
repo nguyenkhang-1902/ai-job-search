@@ -112,35 +112,37 @@ jobs:
       - name: Compile CV example (lualatex)
         run: |
           cd cv
-          lualatex -interaction=nonstopmode -halt-on-error main_example.tex
-          test -f main_example.pdf
-          if grep -q '^!' main_example.log; then
+          mkdir -p pdf
+          lualatex -interaction=nonstopmode -halt-on-error -output-directory=pdf main_example.tex
+          test -f pdf/main_example.pdf
+          if grep -q '^!' pdf/main_example.log; then
             echo '::error::lualatex reported errors compiling cv/main_example.tex'
-            grep -A3 '^!' main_example.log
+            grep -A3 '^!' pdf/main_example.log
             exit 1
           fi
       - name: Compile cover letter example (xelatex)
         run: |
           cd cover_letters
-          xelatex -interaction=nonstopmode -halt-on-error cover_example.tex
-          test -f cover_example.pdf
-          if grep -q '^!' cover_example.log; then
+          mkdir -p pdf
+          xelatex -interaction=nonstopmode -halt-on-error -output-directory=pdf cover_example.tex
+          test -f pdf/cover_example.pdf
+          if grep -q '^!' pdf/cover_example.log; then
             echo '::error::xelatex reported errors compiling cover_letters/cover_example.tex'
-            grep -A3 '^!' cover_example.log
+            grep -A3 '^!' pdf/cover_example.log
             exit 1
           fi
       - name: Verify extractable PDF text
         run: |
-          python3 tools/verify_pdf.py cv/main_example.pdf --min-chars 100
-          python3 tools/verify_pdf.py cover_letters/cover_example.pdf --min-chars 100
+          python3 tools/verify_pdf.py cv/pdf/main_example.pdf --min-chars 100
+          python3 tools/verify_pdf.py cover_letters/pdf/cover_example.pdf --min-chars 100
       - name: Assert stock PDF structure (upstream template only)
         if: github.repository == 'MadsLorentzen/ai-job-search'
         run: |
-          python3 tools/verify_pdf.py cv/main_example.pdf \
+          python3 tools/verify_pdf.py cv/pdf/main_example.pdf \
             --pages 2 \
             --contains '[your.email@example.com]' \
             --contains 'Professional Experience'
-          python3 tools/verify_pdf.py cover_letters/cover_example.pdf \
+          python3 tools/verify_pdf.py cover_letters/pdf/cover_example.pdf \
             --pages 1 \
             --contains 'your.email@example.com' \
             --contains 'Dear [Hiring Manager / Team]'

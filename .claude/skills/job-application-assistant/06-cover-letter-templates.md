@@ -2,27 +2,28 @@
 
 ## Template: Custom cover.cls (XeLaTeX)
 
-Cover letters use a custom LaTeX document class (`cover.cls`) with Lato/Raleway fonts.
+Cover letters use a custom LaTeX document class (`cover.cls`) with **Lato** (headings/name) and **Be Vietnam Pro** (body text). (The class originally bundled Lato/Raleway OTF files under `OpenFonts/fonts/`; Raleway — in that old build and in the current official release — is missing glyphs for most Vietnamese tone-marked vowels, e.g. ề, ự, ệ, ơ, ữ, which silently drops letters when writing a Vietnamese-language letter. Lato's current release does cover Vietnamese, so it was refreshed; Raleway was replaced with Be Vietnam Pro, a font designed specifically for Vietnamese+Latin with a similar geometric-sans feel. Both are bundled TTF files under `OpenFonts/fonts/`, not OS fonts — this was a deliberate choice over Times New Roman/Arial, which are Windows-only and would break the Linux CI container (`texlive/texlive:latest`) that compiles `cover_example.tex` on every push.)
 
-**Output file:** `cover_letters/cover_<company>_<role>.tex`
+**Source file:** `cover_letters/cover_<company>_<role>.tex`
+**Compiled PDF:** `cover_letters/pdf/cover_<company>_<role>.pdf` - the `-output-directory=pdf` flag below keeps `cover_letters/` holding only `.tex` sources, with the PDF and build byproducts (`.aux`/`.log`/`.out`) in `cover_letters/pdf/`. Create `cover_letters/pdf/` first if it doesn't exist (`mkdir -p cover_letters/pdf`).
 **Compile with:** XeLaTeX (cover.cls requires fontspec)
 **Font directory:** `cover_letters/OpenFonts/fonts/`
 
 ### Compile command
 
 ```bash
-cd cover_letters && xelatex -interaction=nonstopmode cover_<company>_<role>.tex
+cd cover_letters && mkdir -p pdf && xelatex -interaction=nonstopmode -output-directory=pdf cover_<company>_<role>.tex
 ```
 
-Expected output: `Output written on cover_<company>_<role>.pdf (1 page, ...)`. Any page count other than 1 is a failure that must be fixed before presenting to the user.
+Expected output: `Output written on cover_<company>_<role>.pdf (1 page, ...)` (path shown relative to `pdf/`). Any page count other than 1 is a failure that must be fixed before presenting to the user.
 
 ## Compile-and-Inspect Loop (MANDATORY)
 
 After writing the cover letter and before presenting to the user, always compile and visually inspect the PDF. Iterate until the layout is clean:
 
-1. Run `xelatex -interaction=nonstopmode cover_<company>_<role>.tex`
+1. Run `xelatex -interaction=nonstopmode -output-directory=pdf cover_<company>_<role>.tex`
 2. Confirm page count is exactly 1 and compile succeeded
-3. Read the PDF via the Read tool and visually check: signature fits at the bottom, no text cut off, bullet font matches body
+3. Read `cover_letters/pdf/cover_<company>_<role>.pdf` via the Read tool and visually check: signature fits at the bottom, no text cut off, bullet font matches body
 
 ### Known template pitfall: itemize inside `\lettercontent{}`
 
@@ -36,11 +37,11 @@ The `\lettercontent{}` macro appends `\\` to its argument. This breaks when the 
 \end{itemize}}
 ```
 
-**Correct — close `\lettercontent{}` before the list and wrap the list in the matching Raleway-Medium font so typography stays consistent:**
+**Correct — close `\lettercontent{}` before the list and wrap the list in the matching Be Vietnam Pro font so typography stays consistent:**
 ```latex
 \lettercontent{Here is how my experience maps:}
 
-{\raggedright\fontspec[Path = OpenFonts/fonts/raleway/]{Raleway-Medium}\fontsize{11pt}{13pt}\selectfont
+{\raggedright\fontspec[Path = OpenFonts/fonts/bevietnampro/]{BeVietnamPro-Medium}\fontsize{11pt}{13pt}\selectfont
 \begin{itemize}
     \item ...
 \end{itemize}\par}
@@ -49,7 +50,7 @@ The `\lettercontent{}` macro appends `\\` to its argument. This breaks when the 
 \lettercontent{[next paragraph]}
 ```
 
-The font wrapper is mandatory — if you just move `\begin{itemize}` outside `\lettercontent{}` without the `\fontspec` block, bullets render in the default body font (Lato) and visually mismatch the rest of the letter.
+The font wrapper is mandatory — if you just move `\begin{itemize}` outside `\lettercontent{}` without the `\fontspec` block, bullets render in the default body font and visually mismatch the rest of the letter.
 
 ## Document Structure
 

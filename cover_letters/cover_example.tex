@@ -6,7 +6,11 @@
 % test for cover.cls: it must always compile with xelatex to exactly 1 page.
 % It demonstrates the correct itemize pattern: the list sits OUTSIDE
 % \lettercontent{} (whose trailing \\ errors on \end{itemize}) and is
-% wrapped in Raleway-Medium so the bullet font matches the body.
+% wrapped in Be Vietnam Pro so the bullet font matches the body (cover.cls
+% pairs a refreshed Lato build with Be Vietnam Pro for full Vietnamese glyph
+% coverage; the original bundled Raleway font drops most Vietnamese tone marks,
+% and Be Vietnam Pro was chosen over an OS font like Times New Roman so the
+% template stays portable and the Linux CI container can still compile it).
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \documentclass[]{cover}
@@ -37,7 +41,7 @@
 
 \lettercontent{[Body paragraph: your most relevant experience, framed toward the tasks in the posting. Follow with 3--5 concrete bullets:]}
 
-{\raggedright\fontspec[Path = OpenFonts/fonts/raleway/]{Raleway-Medium}\fontsize{11pt}{13pt}\selectfont
+{\raggedright\fontspec[Path = OpenFonts/fonts/bevietnampro/]{BeVietnamPro-Medium}\fontsize{11pt}{13pt}\selectfont
 \begin{itemize}
     \item \textbf{[Achievement 1]:} [concrete result with a number where possible]
     \item \textbf{[Achievement 2]:} [skill or project mapped to a posting requirement]

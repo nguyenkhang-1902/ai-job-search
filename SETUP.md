@@ -50,7 +50,7 @@ Install a LaTeX distribution to compile the generated `.tex` files to PDF:
 - **macOS:** [MacTeX](https://tug.org/mactex/)
 - **Linux:** `sudo apt install texlive-full` or `sudo dnf install texlive-scheme-full`
 
-The CV compiles with `lualatex` (pdflatex often fails on modern MiKTeX installs with `fontawesome5` font-expansion errors). The cover letter compiles with `xelatex` because `cover.cls` requires `fontspec` for its custom Lato/Raleway fonts.
+The CV compiles with `lualatex` (pdflatex often fails on modern MiKTeX installs with `fontawesome5` font-expansion errors). The cover letter compiles with `xelatex` because `cover.cls` requires `fontspec` for its bundled Lato and Be Vietnam Pro fonts.
 
 #### Minimal TeX install: TinyTeX/BasicTeX
 
@@ -77,7 +77,7 @@ For BasicTeX/MacTeX, make sure the TeX binary directory is on `PATH` first (for 
 Quick smoke tests after setup:
 
 ```bash
-cd cv && lualatex -interaction=nonstopmode -halt-on-error main_example.tex && cd ..
+cd cv && mkdir -p pdf && lualatex -interaction=nonstopmode -halt-on-error -output-directory=pdf main_example.tex && cd ..
 
 SMOKE_DIR="$(mktemp -d /tmp/ai-job-cover-smoke.XXXXXX)"
 cp -R cover_letters/cover.cls cover_letters/OpenFonts "$SMOKE_DIR/"
@@ -254,7 +254,7 @@ Make sure Bun is installed and you ran `bun install` in each CLI directory. The 
 - Make sure your LaTeX distribution includes the `moderncv` package
 
 ### Fonts not found in cover letter
-The cover letter template expects fonts in `cover_letters/OpenFonts/fonts/`. Make sure this directory exists and contains the Lato and Raleway font files.
+The cover letter template expects fonts in `cover_letters/OpenFonts/fonts/`. Make sure this directory exists and contains the Lato (`lato/`) and Be Vietnam Pro (`bevietnampro/`) font files. Be Vietnam Pro replaced Raleway because Raleway lacks Vietnamese diacritic glyphs (see `06-cover-letter-templates.md`).
 
 ### Stale `.claude/settings.local.json` from an older clone
 Shared Claude Code permissions now live in `.claude/settings.json` (scoped to `bun run`, `python salary_lookup.py`, and `python3 salary_lookup.py`). Earlier versions of this repo committed a broader `.claude/settings.local.json` that pre-approved `Bash(curl:*)`, `Bash(python:*)` and `Bash(bun:*)`. If you cloned before that change, git leaves the old file behind in your working copy, and its permissions still apply on top of `settings.json`. Delete it (or trim it to your own personal overrides):

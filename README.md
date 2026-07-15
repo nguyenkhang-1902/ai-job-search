@@ -182,11 +182,13 @@ ai-job-search/
 │   ├── linkedin-search/               # LinkedIn public job listings (country-agnostic)
 │   └── freehire-search/               # freehire.dev tech job aggregator (multi-market, REST API)
 ├── cv/
-│   └── main_example.tex               # moderncv LaTeX template
+│   ├── main_example.tex               # moderncv LaTeX template
+│   └── pdf/                           # Compiled CV output (gitignored; lualatex -output-directory=pdf)
 ├── cover_letters/
 │   ├── cover.cls                      # Custom cover letter LaTeX class
 │   ├── cover_example.tex              # Example cover letter (structural reference + CI smoke test)
-│   └── OpenFonts/                     # Lato + Raleway fonts
+│   ├── OpenFonts/                     # Lato + Be Vietnam Pro fonts
+│   └── pdf/                           # Compiled cover letter output (gitignored; xelatex -output-directory=pdf)
 ├── templates/                         # Custom templates registered via /add-template
 │   └── README.md                      # Folder layout instructions
 ├── documents/                         # Career source materials for /setup Path A and /expand
@@ -260,7 +262,7 @@ This re-runs the search configuration interview: which roles to target, which sk
 
 ### LaTeX templates
 
-The CV uses [moderncv](https://ctan.org/pkg/moderncv) (banking style). The cover letter uses a custom `cover.cls` with Lato/Raleway fonts.
+The CV uses [moderncv](https://ctan.org/pkg/moderncv) (banking style). The cover letter uses a custom `cover.cls` with Lato and Be Vietnam Pro fonts (chosen for full Vietnamese diacritic coverage).
 
 To use your own template instead, run:
 

@@ -182,9 +182,11 @@ After all edits are applied, the two files on disk are the final drafts.
 ### 5a. Compile
 
 ```bash
-cd cv && lualatex -interaction=nonstopmode main_<company>.tex
-cd ../cover_letters && xelatex -interaction=nonstopmode cover_<company>_<role>.tex
+cd cv && mkdir -p pdf && lualatex -interaction=nonstopmode -output-directory=pdf main_<company>.tex
+cd ../cover_letters && mkdir -p pdf && xelatex -interaction=nonstopmode -output-directory=pdf cover_<company>_<role>.tex
 ```
+
+Both commands write the PDF (and `.aux`/`.log`/`.out`) into a `pdf/` subfolder, keeping `cv/` and `cover_letters/` holding only `.tex` sources.
 
 - CV uses **lualatex** — pdflatex fails on modern MiKTeX with fontawesome5 font-expansion errors. lualatex handles the same sources cleanly.
 - Cover letter uses **xelatex** — cover.cls requires fontspec.
@@ -195,16 +197,16 @@ If either compile fails, fix the error and re-compile until clean.
 
 Read both PDFs via the Read tool and verify:
 
-**CV (`cv/main_<company>.pdf`):**
+**CV (`cv/pdf/main_<company>.pdf`):**
 - [ ] Exactly 2 pages (not 1, not 3)
 - [ ] No orphaned `\cventry` titles — a job/education title line must never sit alone at the bottom of page 1 with its bullets on page 2. This is the most common failure.
 - [ ] Section headings are not isolated at the top of page 2 with only 1-2 lines below
 - [ ] No awkward whitespace gaps
 
-**Cover letter (`cover_letters/cover_<company>_<role>.pdf`):**
+**Cover letter (`cover_letters/pdf/cover_<company>_<role>.pdf`):**
 - [ ] Exactly 1 page
 - [ ] Signature block visible, not cut off or pushed to a second page
-- [ ] Bullet list font matches surrounding body text (both should be Raleway-Medium)
+- [ ] Bullet list font matches surrounding body text (both should be Be Vietnam Pro / BeVietnamPro-Medium)
 
 ### 5c. Iterate until clean
 
@@ -213,7 +215,7 @@ If the layout has problems, edit the `.tex` files and recompile. Common fixes (s
 - **Orphaned CV entry title:** `\usepackage{needspace}` in preamble, then `\needspace{5\baselineskip}` immediately before the problematic `\cventry`
 - **CV spills to page 3 with only a trailing section:** `\enlargethispage{2-3\baselineskip}` before a late section
 - **Substantial content on page 3:** cut content using **relevance-weighted cutting** (see `05-cv-templates.md` → "Relevance-weighted cutting"). Score each candidate line by (a) relevance to THIS posting's keywords and responsibilities, (b) uniqueness (is it duplicated elsewhere?), (c) narrative load (does the cover letter depend on it?). Cut the lowest-total-score line first, regardless of section. Do NOT mechanically apply a static section-based priority order — an older-role bullet that hits posting keywords is worth more than a recent-role bullet that does not.
-- **Cover letter itemize breaks compile or uses wrong font:** close `\lettercontent{}` before the list, wrap the list in `{\raggedright\fontspec[Path = OpenFonts/fonts/raleway/]{Raleway-Medium}\fontsize{11pt}{13pt}\selectfont \begin{itemize}...\end{itemize}\par}`
+- **Cover letter itemize breaks compile or uses wrong font:** close `\lettercontent{}` before the list, wrap the list in `{\raggedright\fontspec[Path = OpenFonts/fonts/bevietnampro/]{BeVietnamPro-Medium}\fontsize{11pt}{13pt}\selectfont \begin{itemize}...\end{itemize}\par}`
 - **Cover letter spills to 2 pages:** trim using the same relevance-weighted logic. First cut: sentences that restate what a bullet already said. Second cut: a bullet that does not hit posting keywords. Last resort: a bullet that does hit posting keywords. Never reduce geometry or line spacing.
 
 Do not proceed to Step 6 until both PDFs pass inspection.
@@ -227,7 +229,7 @@ An ATS parser reads the PDF's embedded **text layer**, not the rendered page —
 **1. Extract the text layer:**
 
 ```bash
-cd cv && pdftotext -layout main_<company>.pdf main_<company>.txt
+cd cv/pdf && pdftotext -layout main_<company>.pdf main_<company>.txt
 ```
 
 Read the `.txt` file.
@@ -256,7 +258,7 @@ Failures here are template-level problems: fix them in the `.tex` (e.g. print th
 
 ### 5e. Clean up build artifacts
 
-After the final clean compile, delete the `.aux`, `.log`, `.out` files (keep the `.tex` and `.pdf`).
+After the final clean compile, delete the `.aux`, `.log`, `.out` files from `cv/pdf/` and `cover_letters/pdf/` (keep the `.tex` sources at the `cv/`/`cover_letters/` root and the `.pdf` files in `pdf/`).
 
 ---
 
