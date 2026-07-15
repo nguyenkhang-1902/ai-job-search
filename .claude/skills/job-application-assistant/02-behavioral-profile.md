@@ -4,47 +4,32 @@
 <!-- You can use results from PI, DISC, Myers-Briggs, StrengthsFinder, or a self-assessment -->
 
 ## Overview
-[YOUR_NAME]'s behavioral assessment identifies them as a **[PROFILE_TYPE]** pattern. [1-2 SENTENCE_SUMMARY].
-
-## Core Behavioral Drives
-
-| Drive | Level | Meaning |
-|-------|-------|---------|
-| [DRIVE_1] | [LEVEL] | [DESCRIPTION] |
-| [DRIVE_2] | [LEVEL] | [DESCRIPTION] |
-| [DRIVE_3] | [LEVEL] | [DESCRIPTION] |
-| [DRIVE_4] | [LEVEL] | [DESCRIPTION] |
+Nguyen Minh Khang has no formal behavioral assessment (DISC, MBTI, StrengthsFinder) on file yet. This profile is a self-assessment synthesized from `/setup` interview answers - review and refine as more evidence (references, formal assessments) becomes available.
 
 ## Strongest Behaviors
-- **[BEHAVIOR_1]:** [DESCRIPTION]
-- **[BEHAVIOR_2]:** [DESCRIPTION]
-- **[BEHAVIOR_3]:** [DESCRIPTION]
+- **Situational flexibility in teamwork:** Works collaboratively during design/planning phases, then shifts to independent, heads-down execution once direction is set.
+- **Risk-calibrated decision-making:** Moves quickly on low-risk, reversible decisions; slows down to research and deliberate on high-stakes or hard-to-reverse ones.
+- **Cross-domain builder:** Energized by both the infrastructure side (pipelines, streaming, orchestration) and the applied-ML side (model training/deployment), rather than specializing narrowly in one.
 
 ## How You Work Best
-- [ENVIRONMENT_PREFERENCE_1]
-- [ENVIRONMENT_PREFERENCE_2]
-- [ENVIRONMENT_PREFERENCE_3]
+- Environments that mix collaborative planning with autonomous execution, not purely one or the other
+- Projects where technical work has a visible downstream output (a dashboard, a model in use, a working pipeline) rather than purely theoretical work
+- Roles that let decision-making pace flex with stakes, rather than mandating either "move fast always" or "get sign-off on everything"
 
 ## Growth Areas (frame positively in applications)
-- **[AREA_1]:** [HOW_TO_FRAME_IT_POSITIVELY]
-- **[AREA_2]:** [HOW_TO_FRAME_IT_POSITIVELY]
+- **Limited formal industry tenure:** Frame as a builder's portfolio - independent projects (streaming CDC pipeline, Customer 360 ELT, computer vision system) demonstrate the same skills a job would, built proactively rather than assigned.
 
 ## Mapping to Job Posting Language
 
 When a job posting mentions these keywords, it's a **strong behavioral fit**:
-- [KEYWORD_OR_PHRASE_THAT_MATCHES_YOUR_STYLE]
-- [ANOTHER_KEYWORD]
+- "cross-functional collaboration", "ownership", "end-to-end pipeline ownership"
+- "fast-paced", "data-driven decision making"
 
 When a job posting mentions these, flag as **potential friction** (not deal-breaker):
-- [KEYWORD_OR_PHRASE_THAT_MIGHT_CLASH]
-- [ANOTHER_KEYWORD]
-
-## Management Style Preferences
-- [WHAT_MANAGEMENT_STYLE_WORKS_FOR_YOU]
-- [WHAT_DOESN'T_WORK]
+- "rigid process/sign-off for every change" (may clash with preference for pace matched to risk, not a fixed process)
 
 ## Using This in Applications
-- **Cover letters:** [HOW_TO_WEAVE_IN_BEHAVIORAL_STRENGTHS]
-- **CV:** [WHAT_TO_EMPHASIZE]
-- **Interviews:** [WHAT_STAR_EXAMPLES_TO_USE]
-- **Don't overstate:** [WHAT_NOT_TO_CLAIM]
+- **Cover letters:** Lead with the independent projects as evidence of self-directed initiative, since formal work history is limited.
+- **CV:** Emphasize end-to-end ownership of pipelines/projects (design through deployment) over task-level bullet points.
+- **Interviews:** Use the Real-time Recruitment CDC Pipeline and Customer 360 Pipeline STAR stubs (see `07-interview-prep.md`) to demonstrate both the infrastructure and applied-ML sides.
+- **Don't overstate:** Don't claim formal team-lead or people-management experience - current experience is individual contributor / intern-level.

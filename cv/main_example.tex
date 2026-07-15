@@ -1,4 +1,4 @@
-%% Example CV - [YOUR_NAME]
+%% Example CV - Nguyen Minh Khang
 %% Comprehensive overview of all competencies, experience, and achievements.
 %% Use as a master reference when tailoring role-specific CVs.
 %%
@@ -24,18 +24,18 @@
     linkcolor=blue,
     filecolor=magenta,
     urlcolor=blue,
-    pdftitle={[YOUR_NAME] - CV},
+    pdftitle={Nguyen Minh Khang - CV},
     pdfpagemode=FullScreen,
 }
 \usepackage[scale=0.80]{geometry}
 \usepackage{import}
 
 % personal data
-\name{[First]}{[Last]}
-\address{[Your Address, City, Country]}{}{}
-\phone[mobile]{[+XX XXXXXXXXXX]}
-\email{[your.email@example.com]}
-\extrainfo{\href{[https://linkedin.com/in/your-profile]}{LinkedIn}, \href{[https://github.com/your-username]}{GitHub}}
+\name{Nguyen}{Minh Khang}
+\address{Binh Duong, Vietnam}{}{}
+\phone[mobile]{0784118667}
+\email{nguyenkhang1150@gmail.com}
+\extrainfo{\href{https://linkedin.com/in/Khang-Nguyen}{LinkedIn}, \href{https://github.com/nguyenkhang-1902}{GitHub}}
 
 \begin{document}
 
@@ -46,7 +46,7 @@
 % ============================================================
 
 \vspace{6pt}
-\small{[Write a 3-5 line profile statement tailored to the role you're applying for. Focus on what makes you uniquely qualified. Example: "Data scientist with a PhD in [field] and X years of industry experience. Combines deep domain expertise in [domain] with strong applied machine learning and Python development skills. Experienced in developing end-to-end ML pipelines, from data ingestion to stakeholder-facing dashboards."]}
+\small{Mathematics \& Computer Science graduate (GPA 8.08/10.0) specializing in applied machine learning and data-driven systems. Experienced in training and deploying computer vision models (YOLO, DINOv2, PyTorch) and integrating LLMs into data pipelines, backed by strong Python, SQL, and PySpark fundamentals. Combines a mathematical optimization background with hands-on model deployment and data engineering to turn raw data into working systems. \textit{Tailor this statement per role -- see \texttt{05-cv-templates.md} for the Data Engineer variant.}}
 
 % ============================================================
 %     CORE COMPETENCIES
@@ -56,15 +56,48 @@
 \vspace{1pt}
 \begin{itemize}
 
-\item \textbf{[Skill Category 1]}: [Specific skills, frameworks, tools. Be concrete.]
+\item \textbf{Programming \& Data}: Python (NumPy, Pandas, PySpark), SQL (MySQL, PostgreSQL), NoSQL (Cassandra)
 
-\item \textbf{[Skill Category 2]}: [Specific skills, frameworks, tools.]
+\item \textbf{Data Engineering}: ETL/ELT pipelines, Change Data Capture, Kafka, Spark, Airflow, Kappa Architecture, Data Warehouse/Data Lake Architecture (HDFS/Hadoop)
 
-\item \textbf{[Skill Category 3]}: [Specific skills, frameworks, tools.]
+\item \textbf{Applied Machine Learning}: OpenCV, PyTorch, YOLO, DINOv2, Label Studio, LLM integration
 
-\item \textbf{[Skill Category 4]}: [Domain expertise, methods, approaches.]
+\item \textbf{Data Quality \& Governance}: Automated data cleaning, schema enforcement, data consistency validation, privacy/security regulation awareness (HIPAA, HL7, FHIR)
 
-\item \textbf{[Skill Category 5]}: [Tools, platforms, software.]
+\item \textbf{Tools \& Analytics}: Docker, Git, Linux, Advanced Excel, Power BI, Streamlit
+
+\end{itemize}
+
+% ============================================================
+%     PROJECTS
+% ============================================================
+
+\section{Projects}
+\vspace{1pt}
+\begin{itemize}
+
+\item{\cventry{Mar--Apr 2026}{Real-time Recruitment CDC Pipeline}{Independent Project}{}{}{\vspace{1pt}
+\begin{itemize}
+    \item Designed a real-time Kappa Architecture streaming pipeline (Kafka, Spark, orchestrated via Airflow) syncing multi-source logs with under 30s latency
+    \item Implemented Spark Checkpointing and reconciliation layers to maintain 99.9\% data consistency
+    \item Containerized services with Docker for reproducible, isolated data environments
+\end{itemize}}}
+
+\vspace{3pt}
+
+\item{\cventry{Nov--Dec 2025}{Customer 360 Pipeline \& AI Integration}{Independent Project}{}{}{\vspace{1pt}
+\begin{itemize}
+    \item Built an end-to-end PySpark ELT pipeline on HDFS performing automated data resolution and semantic clustering across 15k+ profiles
+    \item Structured processed data into a PostgreSQL warehouse and built Power BI dashboards for predictive risk assessment
+\end{itemize}}}
+
+\vspace{3pt}
+
+\item{\cventry{Jan--Jul 2025}{Item Identification in Supermarket}{Independent Project}{}{}{\vspace{1pt}
+\begin{itemize}
+    \item Curated and cleaned a product image dataset through automated processing (OpenCV, Label Studio)
+    \item Trained and deployed deep learning models (YOLO, DINOv2), applying mathematical optimization to balance execution speed and predictive accuracy
+\end{itemize}}}
 
 \end{itemize}
 
@@ -77,31 +110,21 @@
 \begin{itemize}
 
 % --- Most Recent Role ---
-\item{\cventry{[YYYY--Present]}{[Job Title]}{[Company]}{[City, Country]}{}{\vspace{1pt}
+\item{\cventry{Mar 2026--Present}{Human Resources Intern}{Hansoll Vina}{Vietnam}{}{\vspace{1pt}
 \begin{itemize}
-    \item [Achievement or responsibility 1 - be specific, use numbers where possible]
-    \item [Achievement or responsibility 2]
-    \item [Achievement or responsibility 3]
-    \item [Achievement or responsibility 4]
+    \item Compiled, validated, and structured large-scale workforce datasets using advanced Excel, executing cross-referencing techniques to eliminate data anomalies
+    \item Analyzed historical structural databases to generate precise reports on key workforce metrics, ensuring strict data confidentiality
+    \item Managed personnel records and performed cross-referencing techniques to detect anomalies and ensure consistency
 \end{itemize}}}
 
 \vspace{3pt}
 
 % --- Previous Role ---
-\item{\cventry{[YYYY--YYYY]}{[Job Title]}{[Company]}{[City, Country]}{}{\vspace{1pt}
+\item{\cventry{Jan 2023--Jan 2024}{STEM Instructor}{Teky Academy}{Vietnam}{}{\vspace{1pt}
 \begin{itemize}
-    \item [Achievement or responsibility 1]
-    \item [Achievement or responsibility 2]
-    \item [Achievement or responsibility 3]
-\end{itemize}}}
-
-\vspace{3pt}
-
-% --- Earlier Role ---
-\item{\cventry{[YYYY--YYYY]}{[Job Title]}{[Company]}{[City, Country]}{}{\vspace{1pt}
-\begin{itemize}
-    \item [Achievement or responsibility 1]
-    \item [Achievement or responsibility 2]
+    \item Instructed Python and Robotics by deconstructing complex software logic into structured, digestible modules
+    \item Designed educational roadmaps and analyzed performance data to systematically track learning outcomes
+    \item Collaborated with internal management and shared data-driven progress reports to align stakeholder expectations
 \end{itemize}}}
 
 \end{itemize}
@@ -114,14 +137,8 @@
 \vspace{1pt}
 \begin{itemize}
 
-\item{\cventry{[YYYY--YYYY]}{[Degree] in [Field]}{[Institution]}{[City, Country]}{}{\vspace{1pt}
-Thesis: ``[Thesis Title].'' [Brief description of research focus.]
-}}
-
-\vspace{3pt}
-
-\item{\cventry{[YYYY--YYYY]}{[Degree] in [Field]}{[Institution]}{[City, Country]}{}{\vspace{1pt}
-[Brief description or key topics.]
+\item{\cventry{Sep 2021--Apr 2026}{BSc in Mathematics and Computer Science (Mathematical Methods in Computer Science)}{University of Science, VNU-HCM}{Ho Chi Minh City, Vietnam}{}{\vspace{1pt}
+GPA: 8.08/10.0 (157 credits). Graduation thesis graded A+ (9.3/10). Coursework: Optimization Algorithms, Statistics and Probability, Data Visualization, Machine Learning, Financial Mathematics.
 }}
 
 \end{itemize}
@@ -133,28 +150,30 @@ Thesis: ``[Thesis Title].'' [Brief description of research focus.]
 \section{Languages}
 \vspace{1pt}
 \begin{itemize}
-\item [Language 1] (native), [Language 2] (fluent), [Language 3] (intermediate).
+\item Vietnamese (native), English (VSTEP B1, Level 3/6 Vietnamese framework).
 \end{itemize}
 
 % ============================================================
 %     PUBLICATIONS (optional)
 % ============================================================
 
-\section{Publications}
-\vspace{1pt}
-\begin{itemize}
-\item [Author(s)] ([Year]). [Title]. [Journal/Conference]. \href{[DOI_URL]}{DOI link}
-\end{itemize}
+% No publications yet -- uncomment and fill in when applicable.
+% \section{Publications}
+% \vspace{1pt}
+% \begin{itemize}
+% \item [Author(s)] ([Year]). [Title]. [Journal/Conference]. \href{[DOI_URL]}{DOI link}
+% \end{itemize}
 
 % ============================================================
 %     HONORS AND AWARDS (optional)
 % ============================================================
 
-\section{Honors and Awards}
-\vspace{1pt}
-\begin{itemize}
-\item{\textbf{[Award Name]} -- [Event/Organization] ([Year]).}
-\end{itemize}
+% No awards yet -- uncomment and fill in when applicable.
+% \section{Honors and Awards}
+% \vspace{1pt}
+% \begin{itemize}
+% \item{\textbf{[Award Name]} -- [Event/Organization] ([Year]).}
+% \end{itemize}
 
 % ============================================================
 %     REFERENCES

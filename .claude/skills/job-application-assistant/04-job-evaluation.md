@@ -16,9 +16,9 @@ How well do the required/preferred skills align with the candidate's capabilitie
 | 40-59 | Partial match, significant upskilling needed |
 | 0-39 | Fundamental mismatch |
 
-**Strong match areas:** [YOUR_PRIMARY_SKILLS]
-**Moderate match areas:** [YOUR_SECONDARY_SKILLS]
-**Weak match areas:** [SKILLS_YOU_LACK]
+**Strong match areas:** Python (Pandas, NumPy, PySpark), SQL (MySQL, PostgreSQL), ETL/ELT pipeline design, Kafka, Spark, Airflow, applied computer vision (OpenCV, PyTorch, YOLO, DINOv2), Power BI dashboards
+**Moderate match areas:** Data Warehouse/Data Lake architecture (HDFS/Hadoop), Docker, NoSQL (Cassandra), LLM integration, data privacy/security regulation awareness (HIPAA, HL7, FHIR)
+**Weak match areas:** Cloud platforms (AWS/GCP/Azure - not yet on CV), CI/CD and MLOps tooling, production system ownership at scale, formal people/team management
 
 ### 2. Experience Match (0-100)
 Does work history align with what they're looking for?
@@ -30,9 +30,9 @@ Does work history align with what they're looking for?
 | 40-59 | Adjacent experience, would need to make the case |
 | 0-39 | Unrelated experience |
 
-**Strong:** [YOUR_DIRECT_EXPERIENCE_DOMAINS]
-**Moderate:** [YOUR_ADJACENT_EXPERIENCE]
-**Entry-level:** [ROLES_WITH_LIMITED_EXPERIENCE]
+**Strong:** Independent data engineering / ML projects (streaming CDC pipeline, ELT + AI integration, computer vision) demonstrating hands-on technical ownership
+**Moderate:** HR Intern role (data integrity/reporting - transferable data-handling skills, not domain match); STEM Instructor role (stakeholder communication, technical explanation)
+**Entry-level:** All roles - recent/soon graduate (no prior full-time industry title yet), evaluate primarily on project portfolio and technical skills rather than years of experience
 
 ### 3. Behavioral/Culture Fit (0-100)
 Does the role and company culture match the behavioral profile?
@@ -63,19 +63,19 @@ Does this role advance career goals and contain tasks that energize?
 | 0-39 | Dead end or backwards step |
 
 **Career goals:**
-- [YOUR_CAREER_GOAL_1]
-- [YOUR_CAREER_GOAL_2]
-- [YOUR_CAREER_GOAL_3]
+- Land a first full-time role as an AI/ML Engineer or Data Scientist (primary direction)
+- Data Engineer roles are a strong secondary/backup direction (matches the DE-variant resume and project portfolio)
+- Build toward end-to-end ownership of ML/data systems - from pipeline to model to stakeholder-facing output
 
 **Motivation filter:** Evaluate not just whether you *can* do the tasks, but whether the tasks will *energize* you. Consider:
-- Tasks that energize: [YOUR_ENERGIZING_TASKS]
-- Tasks that drain: [YOUR_DRAINING_TASKS]
-- Non-task factors: leadership style, department culture, company values, degree of autonomy
+- Tasks that energize: Applied ML/model work (training, evaluating, deploying models); building and optimizing data pipelines/infrastructure; turning data into decisions (dashboards, analytics stakeholders act on)
+- Tasks that drain: Not yet identified from limited work history - revisit after first few applications/interviews
+- Non-task factors: Mix of collaborative planning + independent execution (not purely either); decision pace that flexes with stakes rather than a rigid process for every change
 
 **Life situation alignment:** Consider personal constraints:
-- **Security**: [YOUR_FINANCIAL_SITUATION_CONTEXT]
-- **Flexibility**: [YOUR_SCHEDULE_CONSTRAINTS]
-- **Professional development**: [YOUR_GROWTH_PRIORITIES]
+- **Security**: Recent/soon graduate (graduating ~Apr 2026) actively job searching; currently in an HR Intern bridge role at Hansoll Vina, not tied to that field long-term
+- **Flexibility**: Based in Binh Duong, Vietnam; prefers roles in the Binh Duong / Ho Chi Minh City area; relocation outside that area is a deal-breaker
+- **Professional development**: Prioritizes roles that build real technical depth (ML deployment, data engineering) over administrative/maintenance-only work; no salary baseline recorded yet
 
 ### 6. Salary Benchmark (Optional)
 

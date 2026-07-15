@@ -1,10 +1,7 @@
-# Job Application Assistant for [YOUR_NAME]
-
-<!-- SETUP: This file is populated by running /setup -->
-<!-- After running /setup, all [PLACEHOLDER] tokens will be replaced with your actual information -->
+# Job Application Assistant for Nguyen Minh Khang
 
 ## Role
-This repo is a job application workspace. Claude acts as a career advisor and application assistant for [YOUR_NAME], helping with:
+This repo is a job application workspace. Claude acts as a career advisor and application assistant for Nguyen Minh Khang, helping with:
 1. **Job fit evaluation** - Assess job postings against your profile (skills, experience, behavioral traits)
 2. **CV tailoring** - Adapt existing CV templates (LaTeX/moderncv) to target specific roles
 3. **Cover letter writing** - Draft targeted cover letters using existing templates (LaTeX)
@@ -16,65 +13,75 @@ This repo is a job application workspace. Claude acts as a career advisor and ap
 <!-- This section is auto-populated by /setup. You can also fill it in manually. -->
 
 ### Identity
-- **Name:** [YOUR_NAME]
-- **Location:** [YOUR_CITY], [YOUR_COUNTRY] ([YOUR_COMMUTE_CONSTRAINTS])
-- **Languages:** [YOUR_LANGUAGES]
-- **Status:** [YOUR_EMPLOYMENT_STATUS]
-- **LinkedIn headline:** "[YOUR_LINKEDIN_HEADLINE]"
+- **Name:** Nguyen Minh Khang
+- **Location:** Binh Duong, Vietnam (prefers roles in Binh Duong / Ho Chi Minh City area; relocation outside that area is a deal-breaker)
+- **Languages:** Vietnamese (native), English (VSTEP B1, Level 3/6 Vietnamese framework, certified June 2024)
+- **Status:** Recent/soon graduate (graduating ~Apr 2026), actively job searching; currently HR Intern at Hansoll Vina as a bridge role
+- **LinkedIn:** linkedin.com/in/Khang-Nguyen
+- **GitHub:** github.com/nguyenkhang-1902
 
 ### Education
 <!-- List your degrees, most recent first -->
-- **[DEGREE_LEVEL] in [FIELD]** ([YEAR_START]-[YEAR_END]) - [INSTITUTION]
-  - Thesis: "[THESIS_TITLE]"
-  - Topics: [KEY_TOPICS]
+- **BSc in Mathematics and Computer Science** (Major: Mathematical Methods in Computer Science / Toan tin) (Sep 2021 - Apr 2026) - University of Science, VNU-HCM
+  - GPA: 8.08/10.0 (157 credits). Graduation thesis graded A+ (9.3/10).
+  - Topics: Optimization Algorithms, Statistics and Probability, Data Visualization, Machine Learning, Financial Mathematics, Intro to AI, Pattern Recognition, Image Processing
 
 ### Professional Experience
 <!-- List your roles, most recent first -->
-- **[JOB_TITLE]** ([START_DATE] - [END_DATE]) - **[COMPANY]** ([LOCATION])
-  - [KEY_RESPONSIBILITY_1]
-  - [KEY_RESPONSIBILITY_2]
-  - [KEY_ACHIEVEMENT]
+- **Human Resources Intern** (Mar 2026 - Present) - **Hansoll Vina** (Vietnam)
+  - Compiled and structured workforce datasets using advanced Excel, cross-referencing to eliminate anomalies
+  - Analyzed historical structural databases to generate workforce metric reports, ensuring data confidentiality
+  - Managed personnel records with cross-referencing techniques to detect anomalies and ensure consistency
+- **STEM Instructor** (Jan 2023 - Jan 2024) - **Teky Academy** (Vietnam)
+  - Instructed Python and Robotics, deconstructing complex software logic into structured learning modules
+  - Designed educational roadmaps and analyzed performance data to track learning outcomes
+  - Shared data-driven progress reports with internal management to align stakeholder expectations
+
+**Independent Projects** (central to the technical portfolio given limited industry tenure):
+- Real-time Recruitment CDC Pipeline (Mar-Apr 2026): Kafka/Spark streaming pipeline, Kappa Architecture, Airflow orchestration, 99.9% data consistency
+- Customer 360 Pipeline & AI Integration (Nov-Dec 2025): PySpark/HDFS ELT pipeline, 15k+ profile resolution, PostgreSQL + Power BI
+- Item Identification in Supermarket (Jan-Jul 2025): Computer vision (OpenCV, YOLO, DINOv2, PyTorch) for product identification
 
 ### Technical Skills
-- **Primary:** [YOUR_PRIMARY_SKILLS]
-- **Secondary:** [YOUR_SECONDARY_SKILLS]
-- **Domain:** [YOUR_DOMAIN_EXPERTISE]
-- **Software:** [YOUR_TOOLS_AND_SOFTWARE]
+- **Primary:** Python (NumPy, Pandas, PySpark), SQL (MySQL, PostgreSQL), ETL/ELT pipelines, Kafka, Spark, Airflow, Applied Computer Vision (OpenCV, PyTorch, YOLO, DINOv2)
+- **Secondary:** Data Warehouse/Data Lake Architecture (HDFS/Hadoop), Docker, NoSQL (Cassandra), LLM integration, Power BI
+- **Domain:** Data engineering (streaming, CDC, orchestration), applied machine learning/computer vision, data quality & governance (schema enforcement, consistency validation, privacy regulation awareness)
+- **Software:** Docker, Git, Linux, Advanced Excel, Power BI, Streamlit
 
 ### Certifications
 <!-- List relevant certifications with dates -->
-- **[CERTIFICATION_NAME]** - [HOURS]h - completed [DATE]
+- **VSTEP English Proficiency Certificate (B1, Level 3/6)** - Ho Chi Minh University of Banking - completed June 2024
 
 ### Publications
-<!-- List peer-reviewed publications, if any -->
-- [AUTHOR_LIST] ([YEAR]). [TITLE]. [JOURNAL].
+None yet.
 
 ### Awards
-<!-- List relevant awards, hackathons, competitions -->
-- [AWARD_NAME] - [EVENT] ([YEAR])
+None recorded yet.
 
 ### Behavioral Profile
-<!-- Your behavioral assessment results (PI, DISC, Myers-Briggs, or self-assessment) -->
-- **[TRAIT_1]** - [DESCRIPTION]
-- **[TRAIT_2]** - [DESCRIPTION]
-- **Strengths:** [YOUR_STRENGTHS]
-- **Growth areas:** [YOUR_GROWTH_AREAS]
-- **Thrives in:** [YOUR_IDEAL_ENVIRONMENT]
+<!-- Self-assessment; no formal DISC/MBTI/StrengthsFinder on file -->
+- **Situational flexibility in teamwork** - Collaborative during design/planning, independent during execution
+- **Risk-calibrated decision-making** - Moves fast on low-risk/reversible decisions, deliberates on high-stakes ones
+- **Strengths:** Cross-domain builder (infrastructure + applied ML); self-directed initiative (evidenced by independent project portfolio)
+- **Growth areas:** Limited formal industry tenure - framed via independent projects as proof of hands-on capability
+- **Thrives in:** Environments mixing collaborative planning with autonomous execution; work with visible downstream output (dashboards, deployed models, working pipelines)
 
 ### What Excites You
 <!-- What motivates you professionally -->
-- [PASSION_1]
-- [PASSION_2]
+- Applied ML/model work: training, evaluating, and deploying models
+- Building and optimizing data pipelines/infrastructure
+- Turning data into decisions (dashboards, analytics stakeholders act on)
 
 ### Target Sectors
 <!-- Industries and companies you're targeting -->
-- [SECTOR_1]: [EXAMPLE_COMPANIES]
-- [SECTOR_2]: [EXAMPLE_COMPANIES]
+- Primary: AI/ML Engineer or Data Scientist roles
+- Secondary: Data Engineer roles
+- No specific target companies yet - casting a broad net across Vietnam (Binh Duong / Ho Chi Minh City)
 
 ### Deal-breakers
 <!-- Hard constraints on job search -->
-- [DEALBREAKER_1]
-- [DEALBREAKER_2]
+- Requires relocation outside the Binh Duong / Ho Chi Minh City area
+- Otherwise open-minded (no other deal-breakers identified yet)
 
 ## Repo Structure
 - `cv/` - LaTeX CV variants (moderncv template, banking style)

@@ -106,11 +106,11 @@ Write 5-7 lines that function as an "elevator pitch": a concise, compelling intr
 **Create 2-3 profile statement templates for your main role types:**
 
 <!-- SETUP: These are populated based on your background -->
-**For [YOUR_PRIMARY_ROLE_TYPE] roles:**
-> [YOUR_PROFILE_STATEMENT_TEMPLATE_1]
+**For AI/ML Engineer / Data Scientist roles:**
+> Mathematics & Computer Science graduate (GPA 8.08/10.0) specializing in applied machine learning and data-driven systems. Experienced in training and deploying computer vision models (YOLO, DINOv2, PyTorch) and integrating LLMs into data pipelines, backed by strong Python, SQL, and PySpark fundamentals. Combines mathematical optimization background with hands-on model deployment to balance predictive accuracy against real-world constraints.
 
-**For [YOUR_SECONDARY_ROLE_TYPE] roles:**
-> [YOUR_PROFILE_STATEMENT_TEMPLATE_2]
+**For Data Engineer roles:**
+> Mathematics & Computer Science graduate specializing in Big Data engineering, scalable data lake/warehouse architectures, and robust ETL/ELT pipelines. Proficient in SQL, Python (PySpark, Pandas), and Airflow, with hands-on experience building real-time streaming pipelines (Kafka, Spark, Kappa Architecture) that maintain 99.9% data consistency. Brings data security awareness and a systems-driven approach to fast-paced environments.
 
 ### Core Competencies / Skills Section (Best Practice)
 Reorder and emphasize based on the role. Use bold category labels.

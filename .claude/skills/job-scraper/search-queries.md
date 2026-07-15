@@ -5,65 +5,64 @@
 ## Search Sites
 
 Primary (your market's job boards - scaffold one with `/add-portal`):
-- **[YOUR_JOB_BOARD]** - your market's largest general job board
-- **linkedin.com/jobs** - LinkedIn job listings (filter: [YOUR_COUNTRY] / [YOUR_CITY])
-- **[YOUR_INDUSTRY_JOB_BOARD]** - a niche/industry board for your field (optional)
-- **[YOUR_ADDITIONAL_JOB_BOARD]** - another major board for your market (optional)
+- **No Vietnam-market portal skill installed yet** - the framework's built-in portal CLIs (Jobindex, Jobbank, Jobdanmark, Jobnet) are Denmark-specific and don't apply here. Run `/add-portal` to scaffold one for a Vietnam board (e.g. ITviec, TopCV, VietnamWorks) when ready.
+- **linkedin.com/jobs** - LinkedIn job listings (filter: Vietnam / Ho Chi Minh City, Binh Duong)
 
 Secondary (company career pages via Google):
-- Direct Google searches with `site:` filters for known target companies
+- Direct Google searches with `site:` filters for known target companies (none specified yet - broad search for now)
 
 ## Query Categories
 
-Queries are grouped by priority. Each query should be combined with your location terms (e.g. your city, region, or metro area) where the site supports it.
+Queries are grouped by priority. Each query should be combined with your location terms (Binh Duong, Ho Chi Minh City, Vietnam) where the site supports it.
 
-### Priority 1: [YOUR_PRIMARY_ROLE_TYPE]
+### Priority 1: AI/ML Engineer / Data Scientist
 
 These match your strongest and most desired career direction.
 
 ```
-site:[YOUR_JOB_BOARD] "[YOUR_PRIMARY_JOB_TITLE]" [YOUR_CITY]
-site:[YOUR_JOB_BOARD] "[YOUR_KEY_SKILL]" [YOUR_CITY]
-site:linkedin.com/jobs "[YOUR_PRIMARY_JOB_TITLE]" [YOUR_COUNTRY]
+site:linkedin.com/jobs "AI Engineer" Vietnam
+site:linkedin.com/jobs "Machine Learning Engineer" Vietnam
+site:linkedin.com/jobs "Data Scientist" "Ho Chi Minh City"
+site:linkedin.com/jobs "Data Scientist" fresher OR junior Vietnam
 ```
 
-### Priority 2: [YOUR_DOMAIN_EXPERTISE]
+### Priority 2: Data Engineer
 
-These match your domain expertise.
+These match your domain expertise (secondary target role).
 
 ```
-site:[YOUR_JOB_BOARD] [YOUR_DOMAIN_KEYWORD_1] [YOUR_CITY] OR [YOUR_REGION]
-site:[YOUR_JOB_BOARD] [YOUR_DOMAIN_KEYWORD_2] [YOUR_COUNTRY]
-site:linkedin.com/jobs [YOUR_DOMAIN_KEYWORD_1] [YOUR_CITY] [YOUR_COUNTRY]
+site:linkedin.com/jobs "Data Engineer" Vietnam
+site:linkedin.com/jobs "Data Engineer" PySpark OR Airflow OR Kafka "Ho Chi Minh City"
+site:linkedin.com/jobs "Big Data Engineer" Vietnam
 ```
 
-### Priority 3: [YOUR_ADJACENT_ROLE_TYPE]
+### Priority 3: Adjacent Roles
 
 Adjacent roles you could pivot into.
 
 ```
-site:[YOUR_JOB_BOARD] "[YOUR_ADJACENT_TITLE_1]" [YOUR_KEY_SKILL] [YOUR_CITY]
-site:[YOUR_JOB_BOARD] "[YOUR_ADJACENT_TITLE_2]" [YOUR_KEY_SKILL] [YOUR_CITY]
+site:linkedin.com/jobs "Data Analyst" Power BI "Ho Chi Minh City"
+site:linkedin.com/jobs "Computer Vision Engineer" Vietnam
+site:linkedin.com/jobs "BI Engineer" Vietnam
 ```
 
-### Priority 4: Broader Technical / Consulting
+### Priority 4: Broader Technical
 
 Wider net for general technical roles.
 
 ```
-site:[YOUR_JOB_BOARD] [YOUR_KEY_SKILL] developer [YOUR_CITY]
-site:linkedin.com/jobs "[YOUR_KEY_SKILL] developer" [YOUR_CITY]
-site:[YOUR_JOB_BOARD] "technical consultant" [YOUR_DOMAIN] [YOUR_CITY]
+site:linkedin.com/jobs Python developer "Ho Chi Minh City"
+site:linkedin.com/jobs "Data Science Intern" OR "AI Intern" Vietnam
+site:linkedin.com/jobs "backend developer" Python Vietnam
 ```
 
 ## Location Filter
 
 When evaluating results, verify the job location is within reasonable commute distance from your home. Define acceptable areas:
-- [YOUR_CITY] and surrounding areas
-- [ACCEPTABLE_AREA_1]
-- [ACCEPTABLE_AREA_2]
-- [BORDERLINE_AREA] (borderline - ~X min by transit)
-- [TOO_FAR_AREA] (too far)
+- Binh Duong (home base - ideal)
+- Ho Chi Minh City (acceptable - regular commute)
+- Remote/hybrid roles for Vietnam-based companies (borderline - evaluate case by case)
+- Anywhere requiring relocation outside Binh Duong / Ho Chi Minh City (too far - deal-breaker)
 
 ## Date Filter
 
